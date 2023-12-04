@@ -1,0 +1,102 @@
+.bookCollection-description{
+    position:fixed;
+    background-color: white;
+    border:0.2rem solid #BAA9CB;
+    padding: 1%;
+    width: 40vw;
+    max-height: 80vh;
+    font-size: 0.7rem;
+    visibility: hidden;
+}
+@media screen and (max-width:1265px){
+    .bookCollection-description{
+        width:60vw;
+        padding: 2% 1%;
+    }
+}
+@media screen and (max-width:860px){
+    .bookCollection-description{
+        visibility: visible;
+        position:relative;
+        width:auto;
+        max-height: max-content;
+        border:solid 0.1rem rgb(239, 235, 243);
+    }
+}
+.bookCollection-text{
+    margin: 0 0 2% 0;
+    text-align: justify;
+    text-indent: 2%;
+}
+.bookCollection-bookWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: center;
+
+}
+.bookCollection-book{
+    margin: 1% 0;
+    max-width: 25%;   
+}
+@media screen and (max-width:860px){
+    .bookCollection-book{
+        max-width: 30%;
+    }
+}
+.bookCollection-bookcover{
+    width: 90%;
+}
+
+.bookCollection-bookName{
+    font-size: 0.6rem;
+    width: 100%;
+    text-align: center;
+}
+@media screen and (max-width:860px){
+    .bookCollection-bookName{
+        width: 96%;
+    }
+}
+
+@media screen and (min-width:861px){
+    :is(
+    .bookCollection-gabur,
+    .bookCollection-hskStandard,
+    .bookCollection-hskCoursebook,
+    .bookCollection-hskBoya,
+    .bookCollection-hskDeveloping,
+    .bookCollection-hskEasySteps):hover .bookCollection-pic{
+        z-index: -1;
+        background-color:white;
+    }
+
+:is(
+    .bookCollection-gabur,
+    .bookCollection-hskStandard,
+    .bookCollection-hskCoursebook,
+    .bookCollection-hskBoya,
+    .bookCollection-hskDeveloping,
+    .bookCollection-hskEasySteps):hover .bookCollection-description{
+    visibility:visible;
+    }
+}
+
+
+
+.bookCollection-description{
+    top:12vh;
+    left:30vw;
+}
+@media screen and (max-width:1265px){
+    .bookCollection-description{
+        left:20vw;
+    }
+}
+@media screen and (max-width:860px){
+    .bookCollection-description{
+        top:0;
+        left:0;
+    }
+}
+

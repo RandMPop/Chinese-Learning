@@ -1,0 +1,35 @@
+.mainNav{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-columns: 1fr;
+    height: 100%;
+}
+@media screen and (max-width:530px){
+    .mainNav{
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-columns: 1fr;
+        grid-template-rows:repeat(2,50%);
+        grid-auto-rows: 1fr;
+    } 
+}
+.mainNav-tab{
+    background-color: #A088B7;
+    color:#FFFFFF;
+    border:solid 0.1rem currentColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.2rem, 2.2vw ,1.4rem);
+    text-align: center;
+    transition: background-color 300ms;
+}
+.mainNav-tab:hover{
+    color: #FFFFFF;
+    background-color: hsl(271, 25%, 53%);
+    border:solid 0.1rem #FFFFFF;
+}
+@media screen and (max-width:928px){
+    .mainNav-tab{
+        font-size:1rem;
+    }
+}

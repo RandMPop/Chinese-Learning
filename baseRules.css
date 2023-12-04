@@ -1,0 +1,42 @@
+html {
+    font-size: 24px;
+}
+
+body{
+    margin:0;
+    font-family: Georgia, 'Century Schoolbook', 'Book Antigua', serif;
+    background-color: white;
+}
+
+[lang="cmn"], [lang="pinyin"]{
+    font-family: DengXian,serif;
+}
+ruby{
+    font-size:1.2rem;
+}
+
+h1{
+    font-size:1.5rem;
+}
+h2{
+    font-size: 1.2rem;
+}
+h3{
+    font-size:1rem;
+}
+a{
+    color:hsl(202, 73%, 40%);
+    text-decoration: none;
+    border-bottom: solid 0.1rem currentColor;
+}
+a:hover{
+    color:hsl(202, 73%, 30%);
+    border-bottom: none;
+}
+iframe{
+    aspect-ratio: 16/9;
+    width: 80%;
+}
+img{
+    width:50%;
+}
