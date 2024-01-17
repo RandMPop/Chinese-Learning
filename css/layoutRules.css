@@ -17,7 +17,6 @@ html{
         scroll-padding-top:17vh;
     }
 }
-
 #masterContainer{
     display:grid;
     grid-template-rows: 10vh 1fr 15vh;
@@ -48,7 +47,6 @@ html{
         grid-template-rows: 18vh 35vh 1fr 15vh;
     }
 }
-
 .l-withoutSidebar #masterContainer{
     display:grid;
     grid-template-rows: 10vh 1fr 15vh;
@@ -63,21 +61,18 @@ html{
         grid-template-rows: 18vh 1fr 15vh;
     }
 }
-
 #mainNavBar{
     grid-area:header;
     position: sticky;
     top:0;
     z-index: 100;
 }
-
 #sidebar{
     grid-area:sidebar;
     position: sticky;
     height: 90vh;
     top:10vh;
 }
-
 @media screen and (max-width:795px){
     #sidebar{
         height: auto;
@@ -93,7 +88,6 @@ html{
         position:static;
     }
 }
-
 #mainContent{
     grid-area:main;
     margin: 0;

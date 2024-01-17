@@ -33,7 +33,6 @@
     flex-wrap: wrap;
     margin: 0;
     justify-content: center;
-
 }
 .bookCollection-book{
     margin: 1% 0;
@@ -47,7 +46,6 @@
 .bookCollection-bookcover{
     width: 90%;
 }
-
 .bookCollection-bookName{
     font-size: 0.6rem;
     width: 100%;
@@ -58,7 +56,6 @@
         width: 96%;
     }
 }
-
 @media screen and (min-width:861px){
     :is(
     .bookCollection-gabur,
@@ -70,7 +67,6 @@
         z-index: -1;
         background-color:white;
     }
-
 :is(
     .bookCollection-gabur,
     .bookCollection-hskStandard,
@@ -81,9 +77,6 @@
     visibility:visible;
     }
 }
-
-
-
 .bookCollection-description{
     top:12vh;
     left:30vw;

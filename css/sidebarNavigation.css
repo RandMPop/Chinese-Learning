@@ -22,14 +22,12 @@
         grid-auto-rows: 1fr;
     }
 }
-
 .sidebarNav-tab{
     background-color: #DFD7E7;
     color:#404040;
     border:solid 0.05rem #FFFFFF;
     display: flex;
     align-items: center;
-    white-space: pre-wrap;
     padding:0 5%;
     font-size: clamp(0.9rem, 1.7vw ,1.1rem);
     flex-wrap: wrap;
@@ -50,7 +48,6 @@
         font-size: 0.7rem;
     }
 }
-
 .sidebarNav-writtenInChinese, .sidebarNav-writtenInPinyin{
     font-size: clamp(0.9rem, 1.7vw ,1.1rem);
 }

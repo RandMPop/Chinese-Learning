@@ -2,7 +2,6 @@
     color:#404040;
     margin: 2%;
 }
-
 .sourceShortDescription-shortInfo{
     background-color: rgb(239, 235, 243);
     display: flex;
@@ -14,7 +13,6 @@
         align-items: center;
     }
 }
-
 .sourceShortDescription-logoWrapper{
     background-color: white;
     margin:1% 2%;
@@ -44,7 +42,6 @@
         width:90%;
     }
 }
-
 .sourceShortDescription-logo{
     align-self: center;
     max-height: 20vh;
@@ -65,21 +62,17 @@
         margin:0 0 2% 0;
     }
 }
-
 .sourceShortDescription-link{
     color: #404040;
     text-decoration:none;
-    
 }
 .sourceShortDescription-link:hover{
     color: #404040;
     text-decoration: underline;
 }
-
 .sourceShortDescription-heading{
     margin: 0 0 1% 0;
 }
-
 @media screen and (max-width:720px){
     .sourceShortDescription-heading{
         padding: 5% 0;

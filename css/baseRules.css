@@ -1,13 +1,11 @@
-html {
+html{
     font-size: 24px;
 }
-
 body{
     margin:0;
     font-family: Georgia, 'Century Schoolbook', 'Book Antigua', serif;
     background-color: white;
 }
-
 [lang="cmn"], [lang="pinyin"]{
     font-family: DengXian,serif;
 }
