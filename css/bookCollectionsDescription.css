@@ -6,7 +6,10 @@
     width: 40vw;
     max-height: 80vh;
     font-size: 0.7rem;
-    visibility: hidden;
+    /* visibility: hidden; */
+    display:none;
+    /* z-index: 4; */
+    z-index: -1;
 }
 @media screen and (max-width:1265px){
     .bookCollection-description{
@@ -16,7 +19,8 @@
 }
 @media screen and (max-width:860px){
     .bookCollection-description{
-        visibility: visible;
+        /* visibility: visible; */
+        display: block;
         position:relative;
         width:auto;
         max-height: max-content;
@@ -57,25 +61,41 @@
     }
 }
 @media screen and (min-width:861px){
-    :is(
-    .bookCollection-gabur,
-    .bookCollection-hskStandard,
-    .bookCollection-hskCoursebook,
-    .bookCollection-hskBoya,
-    .bookCollection-hskDeveloping,
-    .bookCollection-hskEasySteps):hover .bookCollection-pic{
-        z-index: -1;
-        background-color:white;
-    }
-:is(
-    .bookCollection-gabur,
-    .bookCollection-hskStandard,
-    .bookCollection-hskCoursebook,
-    .bookCollection-hskBoya,
-    .bookCollection-hskDeveloping,
-    .bookCollection-hskEasySteps):hover .bookCollection-description{
-    visibility:visible;
-    }
+    /* :is(
+        .bookCollection-gabur,
+        .bookCollection-hskStandard,
+        .bookCollection-hskCoursebook,
+        .bookCollection-hskBoya,
+        .bookCollection-hskDeveloping,
+        .bookCollection-hskEasySteps):hover .bookCollection-pic{
+            z-index: -1;
+            z-index:3;
+            background-color:white;
+        } */
+        .bookCollection-pic:hover{
+                z-index: 3;
+                background-color:white;
+            }
+    /* :is(
+        .bookCollection-gabur,
+        .bookCollection-hskStandard,
+        .bookCollection-hskCoursebook,
+        .bookCollection-hskBoya,
+        .bookCollection-hskDeveloping,
+        .bookCollection-hskEasySteps):hover .bookCollection-description{
+            visibility:visible;
+        } */
+        :is(
+        .bookCollection-gabur,
+        .bookCollection-hskStandard,
+        .bookCollection-hskCoursebook,
+        .bookCollection-hskBoya,
+        .bookCollection-hskDeveloping,
+        .bookCollection-hskEasySteps):has(.bookCollection-pic:hover) .bookCollection-description{
+            /* visibility:visible; */
+            display: block;
+            z-index: 4;
+        }
 }
 .bookCollection-description{
     top:12vh;
