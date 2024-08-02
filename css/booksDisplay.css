@@ -46,7 +46,7 @@
 @media screen and (min-width:860px){
     .bookCollection-info:hover{
         z-index: 6;
-        visibility: hidden;
+        opacity:0%;
     }
 }
 .bookCollection-pic{
